@@ -46,16 +46,6 @@ header .header__menu ul li a:hover {
     background-color: tomato;
 }
 
-footer {
-    background-color: darkred;
-    padding: 10px; 
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    grid-area: footer;
-}
-
 .header__menu{
     display: grid;
     grid-auto-flow: column;
@@ -79,8 +69,19 @@ footer {
     clip-path: var(--clippy);
     transition: clip-path .3s;
 }
+
 .nav__item:hover{
     --clippy: polygon (0 0, 100% 0, 100% 100%, 0  100%);
+}
+
+footer {
+    background-color: darkred;
+    padding: 10px; 
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: footer;
 }
 
 #footer__texto{
