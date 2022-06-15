@@ -1,3 +1,5 @@
+@import _variables.sass
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +7,7 @@
 }
 
 body{
-    background-color: tomato;
+    background-color: $colorDos;
     font-family: sans-serif;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -16,7 +18,7 @@ body{
 }
 
 header {
-    background-color: darkred;
+    background-color: $colorUno;
     padding: 7px;
     display: flex;
     justify-content: space-between;
@@ -28,7 +30,7 @@ header {
         font-family: 'Fugaz One', cursive;
         color: white;
         font-size: 20px;
-        text-shadow: 5px 5px #6b251a;
+        text-shadow: 5px 5px $colorUno;
     }
     .header__menu{
         display: grid;
@@ -37,14 +39,14 @@ header {
         ul{
             li{
                 a:hover{
-                    background-color: #6b251a;
-                    box-shadow: 10px 15px 18px #6b251a;
+                    background-color: $colorUno;
+                    box-shadow: 10px 15px 18px $colorUno;
                 }
             }
         }
         .nav__item{
             text-decoration: none;
-            color: white;
+            color: $colorTres;
             font-size: 20px;
             --clippy: polygon (0 0, 0 0, 0 100%, 0% 100%);
         }
@@ -57,7 +59,7 @@ header {
 }
 
 .nav__item::after{
-    color: white;
+    color: $colorTres;
     content: "";
     display: block;
     width: 90%;
@@ -72,7 +74,7 @@ header {
 }
 
 footer {
-    background-color: darkred;
+    background-color: $colorUno;
     padding: 10px; 
     width: 100vw;
     display: flex;
@@ -81,7 +83,7 @@ footer {
     grid-area: footer;
     #footer__texto{
         font-size: 10px;
-        color: white;
+        color: $colorTres;
         float: left;
         margin-top: 13px;
     }
@@ -103,7 +105,7 @@ footer {
     font-family: 'Bungee Shade', cursive;
     padding: 20px;
     font-size: 80px;
-    color: white;
+    color: $colorTres;
     margin-right: 40px;
     display: flex;
     align-items: center;
@@ -114,7 +116,7 @@ footer {
     font-family: 'Bungee Shade', cursive;
     padding: 20px;
     font-size: 80px;
-    color: white;
+    color: $colorTres;
     margin-right: 40px;
     display: flex;
     align-items: center;
@@ -164,7 +166,7 @@ footer {
         position: fixed;
         top: 80px;
         bottom: 0;
-        background-color: tomato;
+        background-color: $colorDos;
         width: 100%;
         left: 0;
         display: flex;

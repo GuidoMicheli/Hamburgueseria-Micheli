@@ -40,7 +40,7 @@ header .header__titulo {
   font-family: 'Fugaz One', cursive;
   color: white;
   font-size: 20px;
-  text-shadow: 5px 5px #6b251a;
+  text-shadow: 5px 5px darkred;
 }
 
 header .header__menu {
@@ -51,9 +51,9 @@ header .header__menu {
 }
 
 header .header__menu ul li a:hover {
-  background-color: #6b251a;
-  -webkit-box-shadow: 10px 15px 18px #6b251a;
-          box-shadow: 10px 15px 18px #6b251a;
+  background-color: darkred;
+  -webkit-box-shadow: 10px 15px 18px darkred;
+          box-shadow: 10px 15px 18px darkred;
 }
 
 header .header__menu .nav__item {
